@@ -1,0 +1,195 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #000;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 20px 0 30px 0;
+}
+
+.sidebar a {
+    padding: 0px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+.sidebarFooter{
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+}
+
+
+
+#main {
+    background-color: white;
+    transition: margin-left .5s;
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 99999;
+}
+.share{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.share >i{
+    margin: 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+#back{
+    margin: 80px 100px;
+}
+
+
+
+
+
+.item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 25px;
+    border-radius: 8px;
+
+
+}
+.item:hover .layer{
+    top: 0;
+}
+.sec:hover .layer{
+    top: 0;
+}
+.sec{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+ .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff96;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.item picture img{
+    width: 100%;
+}
+.item picture h2{
+    text-align: left;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+}
+
+.input-group input::placeholder{
+    color: #444;
+}
+.input-group input:focus{
+    background-color: black;
+
+}
+
+.input-group input{
+margin: 0 50px;
+background-color: black;
+}
+
+
+
+
+#sub{
+    left: 42%;
+    margin-top: 30px;
+    cursor: inherit;
+}
+#sub:hover{
+    background-color: inherit;
+    color: #dc3545;
+}
+#sub input{
+    width: 50%;
+}
+
+.categ{
+    color: #000;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.categ h3{
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.categ .layer{
+position: absolute;
+top: 0;
+width: 100%;
+transition: opacity 0.5s;
+opacity: 0;
+}
+.categ:hover .layer{
+    opacity: 1;
+}
+
+#meal-categories{
+    color: white;
+    cursor: pointer;
+}
+#meal-categories i{
+font-size: 80px;
+margin: 5px;
+}
+#meal-categories h4{
+    font-size: 30px;
+    margin-top: 10px;
+}
